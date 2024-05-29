@@ -1,0 +1,186 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;;
+}
+
+body {
+  padding: 20px;
+  background-color: #DDE0F8;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+  width: 60%;
+  background-color: white;
+  padding: 5%;
+  text-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .container-card {
+    min-width: 80vw;
+  }
+}
+
+.heading-text {
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+}
+
+.subheading-text {
+  font-size: 1.5rem;
+}
+
+/* Button */
+/* Button https://getcssscan.com/css-buttons-examples*/
+
+
+.no-items-img {
+  width: 70%;
+  height: 70%;
+}
+
+/* Modal  */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Adjust as needed */
+  max-width: 600px; /* Optional: limit the maximum width */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Optional: for better visuals */
+  border-radius: 5px; /* Optional: rounded corners */
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  gap: 10px; /* Space between elements */
+}
+
+.modal-content .close-btn {
+  align-self: flex-end; /* Align close button to the end of the flex container */
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-content form label {
+  width: 100%; /* Full width */
+  margin-bottom: 5px; /* Add some space below the label */
+}
+
+.modal-content form input,
+.modal-content form textarea {
+    width: calc(100% - 20px); /* Adjust the width of the inputs */
+    padding: 10px; /* Add padding for better usability */
+    margin-bottom: 10px; /* Space below each input */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.modal-content form textarea {
+  resize: vertical; /* Allow vertical resize only */
+  height: 100px; /* Set the desired height */
+}
+
+/* Additional styling for the button to open modal */
+.open-modal-btn, .add-task-btn {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.open-modal-btn, .add-task-btn :hover {
+  background-color: #45a049;
+}
+
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-header, .task-item {
+  display: grid;
+  grid-template-columns: 50px 1fr 2fr 150px;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-header {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.task-header > div, .task-item > div {
+  padding: 5px 10px;
+}
+
+
+.task-title, .task-description, .task-controls {
+  display: flex;
+  align-items: center;
+
+}
+
+.task-controls {
+  justify-content: flex-end;
+}
+
+.task-controls a {
+  margin-left: 10px;
+  text-decoration: none;
+  color:#f02929;
+  cursor: pointer;
+}
+
+.task-controls > :first-child {
+  color:  #4F29F0;
+}
+
+.task-controls a:hover {
+  text-decoration: underline;
+}
+
+
