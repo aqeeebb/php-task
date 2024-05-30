@@ -37,6 +37,13 @@ CREATE TABLE tasks (
 );
 ```
 
+## Running the application
+Run the app on:
+
+```
+http://localhost/task-managment/
+```
+
 ## Screenshots
 ### Home Page
 ![HomePage](https://github.com/EmpSwarup/php-task/blob/main/images/screenshot-1.png?raw=true "HomePage")
