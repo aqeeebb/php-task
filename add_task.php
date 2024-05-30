@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $conn->prepare("INSERT INTO tasks (title, description) VALUES (?, ?)");
     $stmt->bind_param("ss", $title, $description);
     $stmt->execute();
-
+// date is auto added with cureent timestamp
     // Close statement
     $stmt->close();
 

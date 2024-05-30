@@ -101,15 +101,6 @@
         }
     }
 
-    // Function to confirm delete action
-    function confirmDelete(event) {
-        if (!confirm('Are you sure you want to delete this task?')) {
-            event.preventDefault();
-            return false;
-        }
-        return true;
-    }
-
     // Function to open the modal for editing a task
     function openEditModal(id, title, description) {
         document.getElementById('taskForm').reset(); // reset the form
@@ -118,6 +109,15 @@
         document.getElementById('title').value = title; // set the title field
         document.getElementById('description').value = description; // set the description field
         taskModal.style.display = "block";
+    }
+
+    // Function to confirm delete action
+    function confirmDelete(event) {
+        if (!confirm('Are you sure you want to delete this task?')) {
+            event.preventDefault();
+            return false;
+        }
+        return true;
     }
   </script>
 </body>

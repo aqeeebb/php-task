@@ -12,12 +12,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->close();
     $conn->close();
 
-    if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-        echo "Success";
-    } else {
-        header("Location: index.php");
-        exit();
-    }
+    // Redirect to index page
+    header("Location: index.php");
+    exit();
 } else {
     $conn->close();
     header("Location: index.php");
